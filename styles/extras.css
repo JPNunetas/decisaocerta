@@ -1,0 +1,19 @@
+.visibility {
+    display: unset;
+}
+
+.menu-animation {
+    animation: menuIntro 1s 1 ease-in-out;
+}
+
+.exit-animation {
+    animation: exitMenu 1s 1 ease-in-out;
+}
+
+.exit-icon-animation {
+    animation: exitIconAnimation 1s ease-in-out 1;
+}
+
+.exit-options-animation {
+    animation: exitIconAnimation 1s ease-in-out 1;
+}
