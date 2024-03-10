@@ -70,7 +70,7 @@
     height: 80%;
 }
 
-.options p {
+.options a {
     color: var(--black);
     font-size: clamp(40px, 2.8vw, 300px);
 
@@ -79,10 +79,10 @@
     transition: all ease-in-out 0.3s;
 }
 
-.options p:hover {
+.options a:hover {
     transform: scale(0.9);
 
-    color: var(--blackOrange);
+    color: var(--transparentOrange);
     text-decoration: underline;
 
     transition: all ease-in-out 0.3s;

@@ -8,10 +8,14 @@
     --black: #3A3A3A;
     --pcolor: #646464;
     --orange: #FFB9A3;
-    --blackOrange: #ff784f;
+    --transparentOrange: #FF9C7D;
     --darkOrange:#FF7448;   
 }
 
 body {
     font-family: "Istok Web", sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
