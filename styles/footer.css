@@ -1,78 +1,40 @@
 .footer {
-    background-color: var(--darkOrange);
+    margin-top: 50px;
+    width: 100%;
+    height: 45px;
+}
+
+.footer-container {
+    background-color: var(--ciano);
     color: white;
-
-    margin-top: 70px;
-
-    width: 100%;
-    height: auto;
-}
-
-.footer-dc {
-    padding: 20px;
-
-    width: 100%;
-    height: auto;
-}
-
-.footer-dc h1 {
-    font-size: clamp(54px, 7vw, 200px);
-}
-
-.footer-dc span {
-    font-weight: normal;
-}
-
-.footer-status {
+    
     display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
 
     width: 100%;
-    height: auto;
-}
-
-.align-status {
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-
-    margin-bottom: 10px;
-
-    width: auto;
     height: 100%;
 }
 
-.align-status p {
-    font-size: 35px;
+.footer-privacy {
+    display: flex;
+    grid-gap: 50px;
 }
 
-.footer-creator {
+.footer-privacy a {
+    color: white;
+}
+
+.footer-privacy a:hover {
+    color: var(--blue);
+    text-decoration: underline solid var(--blue);
+}
+
+.footer-brand {
     display: flex;
     align-items: center;
-
-    width: 100%;
-    height: auto;
-}
-
-.footer-creator-son1 {
-    align-items: center;
-    padding-left: 10px;
-    margin-bottom: 10px;
-
-    width: 50%;
-    height: 100%;
-}
-
-.footer-creator-son2 {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding-right: 10px;
-    margin-bottom: 10px;
-
-    width: 50%;
-    height: 100%;
 }
 
 .dc-icon {
@@ -94,19 +56,10 @@
     height: 100%;
 }
 
-@media (max-width:527px) {
-    .footer-creator {
+@media (max-width:1100px) {
+    .footer-container {
         flex-direction: column;
+        justify-content: space-evenly;
+        height: 130px;
     }
-    .footer-creator-son1 {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 3px;
-        width: 100%;
-    }
-    .footer-creator-son2 {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    } 
 }
