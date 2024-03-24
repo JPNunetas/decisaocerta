@@ -18,8 +18,7 @@
 
 .no-fear {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
 
     width: 100%;
     height: 50%;
@@ -31,8 +30,9 @@
 }
 
 .phone {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
     width: 100%;
     height: 10%;
@@ -41,8 +41,6 @@
 .phone p:nth-child(1) {
     font-size: clamp(20px, 1.3vw, 200px);
     color: var(--pcolor);
-
-    margin-bottom: 10px;
 }
 
 .phone p:nth-child(2) {
@@ -51,6 +49,9 @@
 }
 
 .email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
     width: 100%;
     height: 10%;
@@ -59,8 +60,6 @@
 .email p:nth-child(1) {
     font-size: clamp(20px, 1.3vw, 200px);
     color: var(--pcolor);
-
-    margin-bottom: 10px;
 }
 
 .email p:nth-child(2) {
@@ -70,16 +69,17 @@
 
 
 .location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
     width: 100%;
-    height: 10%;
+    height: 20%;
 }
 
 .location p:nth-child(1) {
     font-size: clamp(20px, 1.3vw, 200px);
     color: var(--pcolor);
-
-    margin-bottom: 10px;
 }
 
 .location p:nth-child(2) {
@@ -89,7 +89,6 @@
 
 .google-maps {
     display: flex;
-    align-items: end;
 
     width: 100%;
     height: 10%;
@@ -267,3 +266,57 @@
     font-size: clamp(28px, 2vw, 200px);
 }
 
+@media (max-width:1086px) {
+    .contacto {
+        flex-direction: column;
+        height: auto;
+    }
+    .contacto-left-logo {
+        width: 100%;
+        height: 10vh;
+    }
+    .info {
+        margin-left: 3%;
+        width: 97%;
+        height: 100vh;
+    }
+    .rigth-contact-items {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media (max-width:600px) {
+    .name-mail {
+        display:block;
+        width: 100%;
+        height: 20%;
+    }
+    
+    .name {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .mail {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .telefone-titulo {
+        display: block;
+    
+        width: 100%;
+        height: 20%;
+    }
+    
+    .telefone {
+        width: 100%;
+        height: 50%;
+    }
+    
+    .titulo {
+        width: 100%;
+        height: 50%;
+    }
+}

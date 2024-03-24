@@ -33,7 +33,7 @@
 
 }
 
-.contact a {
+.contact p {
     color: var(--black);
     font-size: clamp(25px, 1vw, 150px);
     transition: all ease-in-out 0.2s;
