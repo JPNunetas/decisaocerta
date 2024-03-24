@@ -1,8 +1,33 @@
+.backToHero {
+    margin: 15px 0px 0px 15px;
+
+    transition: all ease-in-out 0.3s;
+
+    width: 5.5vw;
+    min-width: 65px;
+    height: 10vh;
+    min-height: 65px;
+}
+
+.backToHero-container {
+    background-image: url('../../../src/decisaocerta-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    width: 100%;
+    height: 100%;
+}
+
+.backToHero:hover {
+    transform: scale(0.8);
+    transition: all ease-in-out 0.3s;
+}
+
 .title {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100%;
     height: 30vh;
 }
@@ -21,7 +46,7 @@
     align-items: center;
     gap: 30px;
 
-    padding-bottom: 125px;
+    margin-bottom: 80px;
 
     width: 100%;
     height: auto;
@@ -52,15 +77,13 @@
 }
 
 .card {
-    background-color: var(--transparentOrange);
+    background-color: var(--ciano);
     border-radius: 30px;
     box-shadow: 0px -5px 0px #737373, 0px 5px 10px #737373;
     color: white;
 
     position: absolute;
-    z-index: 2;
 
-    backface-visibility:hidden;
 
     display: flex;
     flex-direction: column;
@@ -73,7 +96,7 @@
 }
 
 .backface {
-    background-color: var(--transparentOrange);
+    background-color: var(--ciano);
     border-radius: 30px;
     box-shadow: 0px -5px 0px #737373, 0px 5px 10px #737373;
     color: white;
@@ -82,14 +105,15 @@
     justify-content: center;
     align-items: center;
 
+    transform: rotateY(180deg);
+    backface-visibility:hidden;
+
     width: 100%;
     height: 100%;
 }
 
 .backface p {
     font-size: 22px;
-
-    transform: rotateY(180deg);
 
     margin: 0 25px;
 }
@@ -138,8 +162,5 @@
 @media(max-width:980px) {
     .card-contabilidade-position {
         margin-bottom: 0px;
-    }
-    .cards {
-        padding-bottom: 40px;
     }
 }

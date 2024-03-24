@@ -7,6 +7,9 @@ const menu = document.querySelector('.menu');
 const exit = document.querySelector('.exit');
 const options = document.querySelector('.options');
 const footer = document.querySelector('.footer');
+const intro = document.querySelector('.introduction');
+const local = document.querySelector('.local');
+const localContact = document.querySelector('.local-contact');
 
 iconMenu.addEventListener("click", () => {
     menu.classList.remove("exit-animation");
@@ -16,6 +19,9 @@ iconMenu.addEventListener("click", () => {
     options.classList.remove("exit-options-animation");
 
     footer.classList.add("unvisibility");
+    intro.classList.add("unvisibility");
+    local.classList.add("unvisibility");
+    localContact.classList.add("unvisibility");
 
     menu.classList.remove("unvisibility");
     menu.classList.add("visibility");
@@ -27,9 +33,12 @@ exit.addEventListener("click", () => {
     exit.classList.add("exit-icon-animation");
     options.classList.add("exit-options-animation");
 
-    footer.classList.remove("unvisibility");
-
     setTimeout(() => {
+        footer.classList.remove("unvisibility");
+        intro.classList.remove("unvisibility");
+        local.classList.remove("unvisibility");
+        localContact.classList.remove("unvisibility");
+
         menu.classList.remove("visibility");
         menu.classList.add("unvisibility");
     }, 1000)
