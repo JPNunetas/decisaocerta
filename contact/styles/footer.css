@@ -1,0 +1,22 @@
+.footer-contact {
+    background-color: var(--ciano);
+    color: white;
+    cursor: default;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+    width: 100%;
+    height: 45px;
+}
+
+@media (max-width:705px) {
+    .footer-contact {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 130px;
+    }
+}

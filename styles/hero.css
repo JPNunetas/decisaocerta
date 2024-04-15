@@ -17,7 +17,7 @@
     z-index: 1;
 
 
-    width: 200px;
+    width: 400px;
     height: 100%;
 }
 
@@ -63,7 +63,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
 
     animation: opacity 3s ease-in-out 1;
 
@@ -71,20 +70,25 @@
     height: 80%;
 }
 
-.options a {
+.options-text {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+}
+
+.options-text a {
     color: var(--black);
-    font-size: clamp(40px, 2vw, 300px);
+    font-size: clamp(50px, 2vw, 300px);
 
     cursor: pointer;
 
     transition: all ease-in-out 0.3s;
 }
 
-.options a:hover {
-    transform: scale(0.9);
+.options-text a:hover {
+    transform: translateX(15px);
 
     color: var(--ciano);
-    text-decoration: underline;
 
     transition: all ease-in-out 0.3s;
 }
@@ -144,14 +148,14 @@
 }
 
 .hero-title h1 {
-    font-size: clamp(60px, 7.5vw, 200px);
+    font-size: clamp(40px, 11vw,68px);
     color: var(--black);
 
     transition: all ease-in-out 0.2s;
 }
 
 .hero-title p {
-    font-size:  clamp(25px, 2.5vw, 200px);
+    font-size:  clamp(15px, 5vw, 30px);
     color: var(--pcolor);
 }
 
@@ -169,10 +173,10 @@
 }
 
 .contact-btn {
-    padding: 10px 25px;
+    padding: 8px 32px;
 
-    border: 4px solid var(--ciano);
-    border-radius: 50px;
+    border: 2px solid var(--ciano);
+    border-radius: 10px;
 }
 
 .contact-btn p {
@@ -215,12 +219,14 @@
     .flex-icon {
         padding-right: 10px;
     }
-    .hero-title h1 {
-        font-size: clamp(33px, 10vw, 200px);
-    }
     .hero-title p {
-        font-size:  clamp(15px, 2.5vw, 200px);
         text-align: center;
         text-align-last:center;
+    }
+}
+
+@media (max-width:400px) {
+    .menu {
+        width: 100%;
     }
 }
