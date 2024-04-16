@@ -10,7 +10,7 @@
 }
 
 .backToHero-container {
-    background-image: url('../../../src/decisaocerta-logo.png');
+    background-image: url('../../src/decisaocerta-logo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
