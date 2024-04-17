@@ -41,7 +41,7 @@
     transition: all ease-in-out 0.3s;
 }
 
-.history-center {
+.history {
     background-image: url('../src/about.jpg');
     background-repeat: no-repeat;
     background-size: cover;
