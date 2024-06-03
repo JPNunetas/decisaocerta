@@ -31,14 +31,15 @@
 .contact {
     border: 3px solid var(--ciano);
     border-radius: 15px;
+
     padding: 10px 20px;
     cursor: pointer;
-
 }
 
 .contact p {
     color: var(--black);
     font-size: clamp(25px, 1vw, 150px);
+
     transition: all ease-in-out 0.2s;
 }
 
@@ -46,6 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
     position: relative;
 
     width: 50%;
@@ -58,6 +60,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
+    border: solid black;
 
     position: absolute;
     margin-right: 10%;
@@ -74,6 +77,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
+    border: solid black;
 
     position: absolute;
     margin-bottom: 10%;
@@ -89,6 +93,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
+    border: solid black;
 
     position: absolute;
     margin-left: 30%;

@@ -33,6 +33,7 @@
 .intro-content h1 {
     font-size: clamp(40px, 10vw, 300px);
     color: var(--black);
+
     cursor: default;
 }
 
@@ -44,6 +45,7 @@
 .intro-description p {
     font-size: clamp(20px, 3vw, 27px);
     color: var(--black);
+
     cursor: default;
 }
 
@@ -61,8 +63,9 @@
 }
 
 .intro-btn:hover {
-    transform: scale(0.9);
     background-color: var(--black);
+
+    transform: scale(0.9);
     transition: all ease-in-out 0.3s;
 }
 

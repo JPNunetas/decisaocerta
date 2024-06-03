@@ -44,9 +44,9 @@ exit.addEventListener("click", () => {
     }, 1000)
 });
 
-/*  ==========
-    Btn Contact
-    ========== */
+/* ==========
+   Btn Contact
+   ========== */
 
 const contactBtn = document.querySelector('.contact-btn');
 const heroTitle = document.querySelector('.hero-title h1');

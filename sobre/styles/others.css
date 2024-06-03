@@ -42,7 +42,7 @@
 }
 
 .services-blur h1 {
-    font-size: clamp(18px, 10vw, 70px);
+    font-size: clamp(18px, 6vw, 70px);
     text-align: center;
 
     transform: translateY(-50vh);
@@ -90,7 +90,6 @@
 
     overflow: hidden;
 
-
     width: 45%;
     height: 90%;
 }
@@ -118,7 +117,7 @@
 }
 
 .contact-blur h1 {
-    font-size: clamp(18px, 10vw, 70px);
+    font-size: clamp(18px, 6vw, 70px);
     text-align: center;
 
     transform: translateY(-50vh);
@@ -155,5 +154,19 @@
 
 .contact-btn:hover p {
     color: white;
+}
+
+@media (max-width:700px) {
+    .others {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+    .services {
+        width: 70%;
+    }
+    .contact {
+        width: 70%;
+    }
 }
 

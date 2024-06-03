@@ -1,0 +1,4 @@
+@keyframes animationOn {
+    0%{transform: rotate3d(0,0,0,0deg);}
+    100%{transform: rotate3d(0,0,0,0deg);}
+}

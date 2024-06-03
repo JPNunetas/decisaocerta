@@ -12,8 +12,8 @@
     height: 100%;
 }
 
-.local iframe {
-    border: none;
+.local-container iframe {
+    border: 1px solid black;
     border-radius: 16px;
 
     width: 90%;
@@ -48,18 +48,21 @@
 }
 
 .local-btn:hover {
-    transform: scale(0.9);
     background-color: var(--ciano);
+
+    transform: scale(0.9);
     transition: all ease-in-out 0.3s;
 }
 
 .local-btn p {
     color: var(--black);
     font-size: clamp(28px, 2vw, 200px);
+
     transition: all ease-in-out 0.3s;
 }
 
 .local-btn:hover p {
     color: white;
+
     transition: all ease-in-out 0.3s;
 }

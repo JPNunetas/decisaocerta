@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     
-
     width: 100%;
     height: 100vh;
 }
@@ -30,7 +29,7 @@
     background-image: url('../../src/decisaocerta-logo.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 
     width: 100%;
     height: 100%;
@@ -47,6 +46,7 @@
     background-size: cover;
     background-position: center;
     border-radius: 50px;
+    margin-right: 15px;
 
     width: 90%;
     height: 85%;
@@ -54,7 +54,7 @@
 
 .history-center-blur {
     background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(16px);
+    backdrop-filter: blur(7px);
     border-radius: 50px;
 
     overflow: hidden;
@@ -75,25 +75,35 @@
 }
 
 .history-center-blur h1 {
-    font-size: 8vw;
+    font-size: clamp(60px, 8vw, 100px);
 }
 
 .align-p {
-    transform: translateY(43vh);
-    transition: all ease-in-out 1s;
+    transform: translateY(65vh);
+    transition: all ease-in-out 0.8s;
     text-align: justify;
 
     width: 60%;
     height: auto;
-
 }
 
 .align-p p{
-    font-size: clamp(10px, 1.5vw, 50px);
+    font-size: clamp(20px, 1.5vw, 50px);
 }
 
 .history-center-blur:hover .align-p {
     transform: translateY(0);
+}
 
-    transition: all ease-in-out 1s;
+@media (max-width:500px) {
+    .about {
+        flex-direction: column;
+    }
+    .align-backToHero {
+        width: 100%;
+        height: auto;
+    }
+    .history {
+        margin-right: 0px;
+    }
 }
