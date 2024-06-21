@@ -1,6 +1,8 @@
 .contact {
     display: flex;
     position: relative;
+
+    border-bottom: solid 5px rgb(0, 0, 0, 0.15);
     
     width: 100%;
     height: 100vh;
@@ -11,6 +13,7 @@
 
     width: 8%;
     height: 100%;
+    min-height: 50px;
 }
 
 .where {
@@ -22,10 +25,11 @@
     
     width: 30%;
     height: 100%;
+    min-height: 250px;
 }
 
 .where h1 {
-    font-size: clamp(60px, 5.7vw, 200px);
+    font-size: clamp(55px, 5.7vw, 200px);
     cursor: default;
 }
 
@@ -35,6 +39,7 @@
 
     width: 60%;
     height: 100%;
+    min-height: 300px;
 }
 
 .local-container {
@@ -62,13 +67,14 @@
 }
 
 .maps-logo {
-    margin-bottom: 10px;
     filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.5));
     
     animation: move 2s ease-in-out infinite;
 
-    width: 65px;
-    height: 65px;
+    width: 6vw;
+    height: 6vw;
+    min-width: 65px;
+    min-height: 65px;
 }
 
 .maps-logo-container {
@@ -112,6 +118,8 @@
 @media (max-width:1086px) {
     .contact {
         flex-direction: column;
+
+        height: auto;
     }
     .left-logo {
         width: 100%;

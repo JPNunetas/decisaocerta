@@ -4,6 +4,7 @@ Hero Animations
 
 const iconMenu = document.querySelector('.icon-menu');
 const menu = document.querySelector('.menu');
+const menuContainer = document.querySelector('.menu-container');
 const exit = document.querySelector('.exit');
 const options = document.querySelector('.options');
 const footer = document.querySelector('.footer');
@@ -12,8 +13,8 @@ const local = document.querySelector('.local');
 const localContact = document.querySelector('.local-contact');
 
 iconMenu.addEventListener("click", () => {
-    menu.classList.remove("exit-animation");
-    menu.classList.add("menu-animation");
+    menuContainer.classList.remove("exit-animation");
+    menuContainer.classList.add("menu-animation");
 
     exit.classList.remove("exit-icon-animation");
     options.classList.remove("exit-options-animation");
@@ -28,8 +29,8 @@ iconMenu.addEventListener("click", () => {
 });
 
 exit.addEventListener("click", () => {
-    menu.classList.remove("menu-animation");
-    menu.classList.add("exit-animation");
+    menuContainer.classList.remove("menu-animation");
+    menuContainer.classList.add("exit-animation");
     exit.classList.add("exit-icon-animation");
     options.classList.add("exit-options-animation");
 
