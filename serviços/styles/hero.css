@@ -4,9 +4,9 @@
     transition: all ease-in-out 0.3s;
 
     width: 5.5vw;
-    min-width: 40px;
-    height: 6vw;
-    min-height: 40px;
+    min-width: 70px;
+    height: 5.5vw;
+    min-height: 70px;
 }
 
 .backToHero-container {
@@ -204,6 +204,12 @@
    
     .card p::after {
         content: "Clique aqui!";
+    }
+}
+
+@media(max-width:734px) {
+    .cards {
+        margin-bottom: 0px;
     }
 }
 
