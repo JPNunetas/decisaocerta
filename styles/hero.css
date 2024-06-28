@@ -4,6 +4,7 @@
     align-items: center;
     gap: 40px;
 
+<<<<<<< HEAD
     position: relative;
 
     width: 100%;
@@ -13,11 +14,21 @@
 
 .menu {
     overflow: hidden;
+=======
+    width: 100%;
+    height: 100vh;
+}
+
+.menu {
+    background-color: rgba(233, 233, 233, 0.75);
+    backdrop-filter: blur(22px);
+>>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
     
     position: absolute;
     right: 0%;
     z-index: 1;
 
+<<<<<<< HEAD
     width: 40%;
     min-width: 400px;
     height: 100%;   
@@ -31,6 +42,10 @@
     right: 0%;
     
     width: 100%;
+=======
+
+    width: 200px;
+>>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
     height: 100%;
 }
 
@@ -40,19 +55,29 @@
     align-items: center;
 
     width: 100%;
+<<<<<<< HEAD
     height: auto;
+=======
+    height: 80px;
+>>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
 
     animation: opacity 3s 1 ease-in-out;
 }
 
 .exit {
     margin-right: 25px;
+<<<<<<< HEAD
     margin-top: 25px;
 
     width: 3vw;
     height: 3vw;
     min-width: 50px;
     min-height: 50px;
+=======
+
+    min-width: 50px;
+    height: 50px;
+>>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
 
     cursor: pointer;
 }
@@ -76,8 +101,15 @@
 
 .options {
     display: flex;
+<<<<<<< HEAD
     justify-content: center;
     align-items: center;
+=======
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+>>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
 
     animation: opacity 3s ease-in-out 1;
 
@@ -85,6 +117,7 @@
     height: 80%;
 }
 
+<<<<<<< HEAD
 .options-text {
     display: flex;
     flex-direction: column;
@@ -94,16 +127,29 @@
 .options-text a {
     color: var(--black);
     font-size: clamp(50px, 5vw, 300px);
+=======
+.options a {
+    color: var(--black);
+    font-size: clamp(40px, 2vw, 300px);
+>>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
 
     cursor: pointer;
 
     transition: all ease-in-out 0.3s;
 }
 
+<<<<<<< HEAD
 .options-text a:hover {
     transform: translateX(15px);
 
     color: var(--ciano);
+=======
+.options a:hover {
+    transform: scale(0.9);
+
+    color: var(--ciano);
+    text-decoration: underline;
+>>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
 
     transition: all ease-in-out 0.3s;
 }
@@ -119,6 +165,7 @@
 
 .flex-icon {
     display: flex;
+<<<<<<< HEAD
     justify-content: space-between;
 
     width: 100%;
@@ -149,16 +196,29 @@
 .backToHero:hover {
     transform: scale(0.8);
     transition: all ease-in-out 0.3s;
+=======
+    justify-content: end;
+    align-items: center;
+
+    width: 100%;
+    height: 7.5%;
+>>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
 }
 
 .icon-menu {
     transition: all ease-in-out 0.3s;
     cursor: pointer;
 
+<<<<<<< HEAD
     width: 5.5vw;
     min-width: 70px;
     height: 5.5vw;
     min-height: 70px;
+=======
+    width: 7.5%;
+    min-width: 50px;
+    height: 100%;
+>>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
 }
 
 .icon-menu-container {
@@ -181,7 +241,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     
+=======
+    margin-top: 13%;
+>>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
     cursor: default;
 
     width: 100%;
@@ -189,14 +253,22 @@
 }
 
 .hero-title h1 {
+<<<<<<< HEAD
     font-size: clamp(45px, 7.2vw, 200px);
+=======
+    font-size: clamp(60px, 7.5vw, 200px);
+>>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
     color: var(--black);
 
     transition: all ease-in-out 0.2s;
 }
 
 .hero-title p {
+<<<<<<< HEAD
     font-size:  clamp(22px, 3vw, 150px);
+=======
+    font-size:  clamp(25px, 2.5vw, 200px);
+>>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
     color: var(--pcolor);
 }
 
@@ -204,8 +276,14 @@
     text-decoration: underline 5px solid var(--ciano);
 }
 
+<<<<<<< HEAD
 .box-ctn {
     display: flex;
+=======
+.box-btn {
+    display: flex;
+    align-items: center;
+>>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
     justify-content: center;
 
     width: 100%;
@@ -213,6 +291,7 @@
 }
 
 .contact-btn {
+<<<<<<< HEAD
     padding: 8px 32px;
 
     border: 2px solid var(--ciano);
@@ -221,6 +300,16 @@
 
 .contact-btn p {
     font-size:clamp(25px, 3vw, 170px);
+=======
+    padding: 10px 25px;
+
+    border: 4px solid var(--ciano);
+    border-radius: 50px;
+}
+
+.contact-btn p {
+    font-size:clamp(25px, 2vw, 50px);
+>>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
     color: var(--pcolor);
 
     transition: all ease-in-out 0.2s;
@@ -259,6 +348,7 @@
     .flex-icon {
         padding-right: 10px;
     }
+<<<<<<< HEAD
     .hero-title p {
         text-align: center;
         text-align-last: center;
@@ -269,5 +359,14 @@
     .menu {
         width: 100%;
         min-width: 0px;
+=======
+    .hero-title h1 {
+        font-size: clamp(33px, 10vw, 200px);
+    }
+    .hero-title p {
+        font-size:  clamp(15px, 2.5vw, 200px);
+        text-align: center;
+        text-align-last:center;
+>>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
     }
 }
