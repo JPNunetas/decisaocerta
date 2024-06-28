@@ -1,22 +1,14 @@
 .footer {
     margin-top: 50px;
-<<<<<<< HEAD
 
     width: 100%;
     height: auto;
-=======
-    width: 100%;
-    height: 45px;
->>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
 }
 
 .footer-container {
     background-color: var(--ciano);
     color: white;
-<<<<<<< HEAD
     cursor: default;
-=======
->>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
     
     display: flex;
     align-items: center;
@@ -25,16 +17,12 @@
     padding: 0 20px;
 
     width: 100%;
-<<<<<<< HEAD
     height: 10vh;
     min-height: 45px;
 }
 
 .footer-container p {
     font-size: clamp(15px, 1.5vw, 60px);
-=======
-    height: 100%;
->>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
 }
 
 .footer-privacy {
@@ -44,7 +32,6 @@
 
 .footer-privacy a {
     color: white;
-<<<<<<< HEAD
     font-size: clamp(15px, 1.5vw, 60px);
     
     transition: all 0.3s ease-in-out;
@@ -55,25 +42,15 @@
     
     transform: scale(0.9);
     transition: all 0.3s ease-in-out;
-=======
-}
-
-.footer-privacy a:hover {
-    color: var(--blue);
-    text-decoration: underline solid var(--blue);
->>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
 }
 
 .footer-brand {
     display: flex;
     align-items: center;
-<<<<<<< HEAD
     justify-content: end;
 
     width: 20%;
     height: 100%;
-=======
->>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
 }
 
 .dc-icon {
@@ -81,32 +58,22 @@
     border-radius: 50%;
     margin-right: 10px;
 
-<<<<<<< HEAD
     width: 3vw;
     height: 3vw;
     min-width: 30px;
     min-height: 30px;
-=======
-    min-width: 30px;
-    height: 30px;
->>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
 }
 
 .dc-icon-container {
     background-image: url("../src/decisaocerta-logo.png");
     background-position: center;
-<<<<<<< HEAD
     background-size: 100% 100%;
-=======
-    background-size: cover;
->>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
     background-repeat: no-repeat;
 
     width: 100%;
     height: 100%;
 }
 
-<<<<<<< HEAD
 @media (max-width:1000px) {
     .footer-container {
         flex-direction: column;
@@ -129,12 +96,5 @@
         grid-gap: 5px;
 
         height: auto;
-=======
-@media (max-width:1100px) {
-    .footer-container {
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 130px;
->>>>>>> 325e4593f517520b9baf0e6b31b564df41743117
     }
 }
