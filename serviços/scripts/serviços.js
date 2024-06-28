@@ -1,6 +1,6 @@
-/*  ==========
-    Btn Contact
-    ========== */
+/* ==========
+   Btn Contact
+   ========== */
 
     const contact = document.querySelector('.contact');
     const withUs = document.querySelector('.withUs h1');

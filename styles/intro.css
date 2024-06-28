@@ -2,7 +2,7 @@
     margin-top: 50px;
 
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
 .background {
@@ -24,7 +24,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 3vh;
 
     width: 100%;
     height: 100%;
@@ -33,6 +33,9 @@
 .intro-content h1 {
     font-size: clamp(40px, 10vw, 300px);
     color: var(--black);
+
+    margin-top: 20px;
+
     cursor: default;
 }
 
@@ -42,13 +45,14 @@
 }
 
 .intro-description p {
-    font-size: clamp(20px, 3vw, 27px);
+    font-size: clamp(23px, 3vw, 150px);
     color: var(--black);
+
     cursor: default;
 }
 
 .intro-btn {
-    margin-top: 50px;
+    margin-top: 3vh;
 
     border: 2px solid var(--black);
     border-radius: 6px;
@@ -56,22 +60,31 @@
 
     transition: all ease-in-out 0.3s;
 
+    margin-bottom: 20px;
+
     width: auto;
     height: auto;
 }
 
 .intro-btn:hover {
-    transform: scale(0.9);
     background-color: var(--black);
+
+    transform: scale(0.9);
     transition: all ease-in-out 0.3s;
 }
 
 .intro-btn p {
-    font-size: clamp(20px, 1.3vw, 300px);
+    font-size: clamp(23px, 2.4vw, 150px);
     color: var(--black);
 }
 
 .intro-btn:hover p {
     color: white;
     transition: all ease-in-out 0.3s;
+}
+
+@media (max-width:400px) {
+    .introduction {
+        margin-top: 0px;
+    }
 }

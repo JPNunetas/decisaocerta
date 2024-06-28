@@ -1,0 +1,13 @@
+@keyframes animationOn {
+    0%{transform: rotate3d(0,0,0,0deg);}
+    100%{transform: rotate3d(0,0,0,0deg);}
+}
+
+@keyframes click {
+    50%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

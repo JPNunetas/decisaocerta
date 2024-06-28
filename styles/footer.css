@@ -1,5 +1,6 @@
 .footer {
     margin-top: 50px;
+
     width: 100%;
     height: auto;
 }
@@ -16,7 +17,12 @@
     padding: 0 20px;
 
     width: 100%;
-    height: 45px;
+    height: 10vh;
+    min-height: 45px;
+}
+
+.footer-container p {
+    font-size: clamp(15px, 1.5vw, 60px);
 }
 
 .footer-privacy {
@@ -26,20 +32,25 @@
 
 .footer-privacy a {
     color: white;
+    font-size: clamp(15px, 1.5vw, 60px);
     
     transition: all 0.3s ease-in-out;
 }
 
 .footer-privacy a:hover {
-    transform: scale(0.9);
     color: black;
     
+    transform: scale(0.9);
     transition: all 0.3s ease-in-out;
 }
 
 .footer-brand {
     display: flex;
     align-items: center;
+    justify-content: end;
+
+    width: 20%;
+    height: 100%;
 }
 
 .dc-icon {
@@ -47,31 +58,43 @@
     border-radius: 50%;
     margin-right: 10px;
 
+    width: 3vw;
+    height: 3vw;
     min-width: 30px;
-    height: 30px;
+    min-height: 30px;
 }
 
 .dc-icon-container {
     background-image: url("../src/decisaocerta-logo.png");
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 
     width: 100%;
     height: 100%;
 }
 
-@media (max-width:900px) {
-    .footer-privacy {
-        flex-direction: column;
-        grid-gap: 0px;
-    }
-}
-
-@media (max-width:705px) {
+@media (max-width:1000px) {
     .footer-container {
         flex-direction: column;
         justify-content: space-evenly;
-        height: 130px;
+        
+        height: 150px;
+    }
+    .footer-privacy {
+        grid-gap: 30px;
+    }
+    .footer-brand {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width:437px) {
+    .footer-privacy {
+        flex-direction: column;
+        grid-gap: 5px;
+
+        height: auto;
     }
 }
