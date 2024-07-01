@@ -15,6 +15,12 @@
     background-size: cover;
     border-radius: 50px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
     overflow: hidden;
 
     width: 45%;
@@ -56,14 +62,21 @@
 
     padding: 5px 24px;
 
-    transform: translateY(50vh);
     transition: all ease-in-out 0.5s;
 
     width: auto;
     height: auto;
 }
 
-.services-blur:hover h1, .services-blur:hover .services-btn {
+.services-blur:hover a {
+    animation: moveUp 0.5s ease-in-out;
+}
+
+.services-blur:not(:hover) a {
+    animation: moveDown 0.5s ease-in-out;
+}
+
+.services-blur:hover h1 {
     transform: translateY(0vh);
 }
 
@@ -88,6 +101,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
 
     overflow: hidden;
 
@@ -131,14 +150,21 @@
 
     padding: 5px 24px;
 
-    transform: translateY(50vh);
     transition: all ease-in-out 0.5s;
 
     width: auto;
     height: auto;
 }
 
-.contact-blur:hover h1, .contact-blur:hover .contact-btn {
+.contact-blur:hover a {
+    animation: moveUp 0.5s ease-in-out;
+}
+
+.contact-blur:not(:hover) a {
+    animation: moveDown 0.5s ease-in-out;
+}
+
+.contact-blur:hover h1{
     transform: translateY(0vh);
 }
 
@@ -157,11 +183,43 @@
     color: white;
 }
 
+.click2 {
+    background-image: url('../src/click2.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all ease-in-out 0.3s;
+
+    display: none;
+
+    position: absolute;
+
+    width: 80px;
+    height: 80px;
+}
+
+.services:hover .click2 {
+    transform: scale(0);
+}
+
+.contact:hover .click2 {
+    transform: scale(0);
+}
+
+@media (max-width:768px) {
+    .click2 {
+        display: unset;
+    }
+}
+
 @media (max-width:700px) {
     .others {
         flex-direction: column;
         justify-content: center;
         gap: 30px;
+
+        margin-top: 23px;
     }
     .services {
         width: 70%;
